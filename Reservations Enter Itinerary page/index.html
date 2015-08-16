@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang ="en"
+	<head>
+		<title>CS Reservation Application</title>
+		<meta charset = "utf-8">
+		<meta name ="viewport" content="width=device-width, initial-scale=1">
+
+<! get our bootstrap files >
+		<link rel="stylesheet"
+		href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="jquery-ui.css">
+		<style>
+			.tt-dataset
+			{
+				background-color:white;
+			}
+		</style>
+
+<! get our javascript libraries >
+		
+
+	</head>
+
+<body>
+
+	<div class= "container">
+
+	<h1> Reservation Request Form</h1>
+
+<div class ="container">
+
+
+	<div class='row'>
+		<div class ='col-md-6'>
+		<form id="the-basics" class="form-inline" role="form">
+			
+					<input class="form-control typeahead" type="text" placeholder="Select Your School"/>
+  					<input class="form-control typeahead" placeholder="Select Closest Dorm"/>
+			
+		</form>
+		</div>
+	
+
+	</div>
+
+	<div class='row'>
+		<div class ='col-md-6'>
+			<form id="the-basics" class="form-inline" role="form">
+				<div class ="form-group">
+					<input id="date" class="form-control " placeholder="Select Trip Date"/>
+    				<input class="form-control typeahead" placeholder="Select Your Stop"/>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class='row'>
+		<div class ='col-md-10'>	
+					<div class="col-md-10 col-md-offset-0">
+				<label class ="checkbox">
+					<input type ="checkbox" value=""> <small> One Way Only </small> 
+				</label>
+		 </div>
+	 </div>
+	 				</div>	
+
+
+	<div class='row'>
+		<div class ='col-md-2'>	
+			 <button type="button" class="btn btn-danger">Find My Ride</button>
+		 </div>
+	 </div>
+
+</div>
+
+
+<p> add a javascript next</p>
+<p> add the javascript functionalities to pull a list of schools dynamically and then also lookup applicable dorms to the school </p>
+    
+	
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="jquery-ui.js"></script>
+		<script type="text/javascript" src="typeahead.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootsrap.min.js"></script>
+		
+		<script>
+			$('#date').datepicker({});
+		</script>
+</body>
+</html>
